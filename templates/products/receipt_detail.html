@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+<br></br>
+
+<div class = "container">
+  <h1 class= "text-center">ITEMS IN STOCK</h1>
+  <br>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Item Name</th>
+        <th scope="col">Item Quantity </th>
+        <th scope="col">Amount Paid (₵)</th>
+        <th scope="col">Total Change(₵)</th>
+    
+      </tr>
+    </thead>
+   
+    <tbody>
+      <tr>    
+        <td>{{sale.item}}</td>
+        <td>{{sale.quantity}}</td>
+        <td>₵{{sale.amount_received}}</td>
+        <td>₵{{sale.unit_price}}</td>
+      
+      </tr>
+    </tbody>
+   
+  </table>
+</div>
+
+
+{% endblock %}
